@@ -6,7 +6,7 @@ print(sorted(location))
 print(location)
 print(sorted(location,reverse=True))
 print(location)
-
+# 使用sort(),修改列表本身，且没有输出
 location.reverse()
 print(location)
 location.sort()
