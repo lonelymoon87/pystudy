@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*
+'''
 #8-1
 def display_message():
     print("I am learning functions")
@@ -29,6 +30,74 @@ def describe_city(city, country="China"):
 describe_city("beijin")
 describe_city("shanghai")
 describe_city("tokyo","Japan")
+
+# 8-6
+def city_country(city,country):
+    return city+","+country
+
+
+place1 = city_country("xiamen","China")
+
+print(place1)
+# 8-7
+
+def make_album(artist,album,num=""):
+    if num:
+        return {"name":artist,"albumn":album,"num":num}
+    else:
+        return {"name":artist,"albumn":album}
+
+player1 = make_album("cqy","xq")
+player2 = make_album("jay", "jay")
+player2 = make_album("jay", "jay", 12)
+
+print(player1)
+print(player2)
+
+# 8-8 
+
+while True:
+    artist = input("please enter name\n")
+    ablum = input("please enter album\n")
+    num = input("please enter num\n")
+    if artist == "q" or ablum == "q" or num == "q":
+        break
+    player = make_album(artist,ablum,num)
+    print(player)
+'''
+# 8-9
+magicians = ["aaa","bbb","ccc"]
+
+def show_magi(list):
+    for name in list:
+        print(name)
+
+def make_great(list):
+    list1=[]
+    for name in list:
+        list1.append("The Great "+name)
+    return list1
+
+show_magi(make_great(magicians[:]))
+show_magi(make_great(magicians))
+
+
+print (magicians)
+
+# 函数形参带*表示可以接收多个参数作为元祖
+
+        
+
+
+            
+
+        
+    
+
+
+
+    
+
 
 
 
