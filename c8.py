@@ -64,7 +64,6 @@ while True:
         break
     player = make_album(artist,ablum,num)
     print(player)
-'''
 # 8-9
 magicians = ["aaa","bbb","ccc"]
 
@@ -85,6 +84,45 @@ show_magi(make_great(magicians))
 print (magicians)
 
 # 函数形参带*表示可以接收多个参数作为元祖
+# 函数形参带**表示可以接受多个键值对作为字典
+
+# 8-12
+def sandwish(*foods):
+    print("\nYou ordered sandwish:")
+    for food in foods:
+        print("\t %d" %food)
+    
+sandwish(112,333,444,1111)
+sandwish(112)
+sandwish(334,333,11233,84)
+'''
+
+# 8-13
+
+def user_profile(fname,lname,**profiles):
+    profiles["fname"] = fname
+    profiles["lname"] = lname
+    for profile,value in profiles.items():
+        print(profile+": "+str(value))
+
+user_profile("qy","chen",age=18,hight=180,nickname="lonelymoon")
+
+# 8-14
+def make_car(band,model,**profiles):
+    profiles["band"] = band
+    profiles["model"] = model
+    return profiles
+
+car = make_car('subaru', 'outback', color='blue', tow_package=True)
+
+print(car)
+
+
+
+
+
+
+
 
         
 
