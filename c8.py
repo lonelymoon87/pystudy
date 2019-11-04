@@ -108,14 +108,18 @@ def user_profile(fname,lname,**profiles):
 user_profile("qy","chen",age=18,hight=180,nickname="lonelymoon")
 
 # 8-14
-def make_car(band,model,**profiles):
-    profiles["band"] = band
-    profiles["model"] = model
-    return profiles
 
 car = make_car('subaru', 'outback', color='blue', tow_package=True)
 
 print(car)
+
+# 导入函数的2种方式
+# import 模块名。 这种方式，调用函数需要 "模块名.函数名"
+# form 模块名 import 函数名. 这种方式，调用函数只需要 "函数名"
+# import pizza as p /from pizza import make_pizza as mp 可以修改函数别名
+
+
+
 
 
 
