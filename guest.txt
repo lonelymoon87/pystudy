@@ -2,3 +2,5 @@
 kke
 111
 33
+python3 "/home/lingtony/study/git/pystudy/c10.py"
+
