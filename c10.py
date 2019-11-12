@@ -86,3 +86,7 @@ else:
 
 
 countword("test1.txt","乔")
+
+# 10-11
+
+
