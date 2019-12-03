@@ -7,6 +7,5 @@ def countword(file,word):
         print("file not exist")
     else:
         count = line.count(word)
-    
-    print("the %s comeout  %d times" %(word,count))
+        print("the %s comeout  %d times" %(word,count))
     
